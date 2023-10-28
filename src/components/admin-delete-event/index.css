@@ -1,0 +1,133 @@
+.special-event-container-delete {
+    position: relative;
+    width: 50rem;
+    margin: 10px auto;
+}
+
+.special-event-container-delete button.back{
+    cursor: pointer;
+}
+
+.special-event-container-delete button.back {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 200;
+    border: none;
+    border-radius: 50%;
+}
+
+.special-event-container-delete button span{
+    font-size: 30px;
+    background-color: white;
+    color: #007bff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.special-event-container-delete .upper {
+    width: 100%;
+    height: 27rem;
+}
+
+.special-event-container-delete .upper img {
+    width: 100%;
+    height: 100%;
+}
+
+.special-event-container-delete .lower {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0px 25px; */
+    margin-top: 1rem;
+}
+
+.special-event-container-delete .lower .name-date-combo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.special-event-container-delete .lower .item {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.special-event-container-delete .lower .item .location {
+    font-style: italic;
+}
+
+.special-event-container-delete .lower .btn {
+    margin-top: 15px;
+}
+
+.special-event-container-delete .lower .btn button {
+    font-size: 20px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.726);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.special-event-container-delete .lower .item button:hover{
+    background-color: red;
+}
+
+
+@media screen and (max-width:780px) {
+    .special-event-container-delete {
+        width: 100%;
+        margin: 0px 0px;
+    }
+    .special-event-container-delete .upper {
+        width: 100%;
+        height: 23rem;
+    }
+    .special-event-container-delete .lower {
+        padding: 0px 25px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .special-event-container-delete .upper {
+        width: 100%;
+        height: 16rem;
+    }
+
+    .special-event-container-delete button{
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .special-event-container-delete button span {
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    .special-event-container-delete .lower .name-date-combo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .special-event-container-delete .lower .item h1 {
+        margin-bottom: 15px;
+    }
+
+    .special-event-container-delete .lower .item {
+        font-size: 16px;
+    }
+
+    .special-event-container-delete .lower .item .event-name {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .special-event-container-delete .upper {
+        width: 100%;
+        height: 12rem;
+    }
+}

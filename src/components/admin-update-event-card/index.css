@@ -1,0 +1,157 @@
+body {
+    background-color: #f9f9f9be;
+    font-family: Helvetica;
+}
+
+.add-event-main-container{
+    position: relative;
+}
+
+.add-event-form .signup{
+    margin-top: 5rem;
+}
+
+.user-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user-login-container h2 {
+    color: #111;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+.user-login-container .inner-user-login-container{
+    padding: 2rem;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 8px;
+}
+
+.user-login-container .inner-user-login-container .sign-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 30rem;
+}
+
+.user-login-container .inner-user-login-container .signup{
+    margin-bottom: 0px;
+}
+
+.user-login-container .inner-user-login-container .sign-item label{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.user-login-container .inner-user-login-container .sign-item input,
+.user-login-container .inner-user-login-container .sign-item textarea{
+    padding: 10px 10px;
+    border: 2px solid rgba(163, 161, 161, 0.523);
+    border-radius: 3px;
+    background-color: rgba(163, 161, 161, 0.057);
+    font-size: 18px;
+}
+
+.user-login-container .inner-user-login-container .sign-item textarea{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.user-login-container .inner-user-login-container .sign-item input:focus-visible,
+.user-login-container .inner-user-login-container .sign-item textarea:focus-visible{
+    outline: 2px solid #007aff;
+    border: none;
+}
+
+.user-login-container .inner-user-login-container .sign-item button{
+    padding: 10px 0px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    background-color: #007aff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.user-login-container .inner-user-login-container .sign-item button:hover{
+    background-color: #006fe5;
+}
+
+.user-login-container .inner-user-login-container .sign-item p{
+    font-size: 20px;
+}
+
+.user-login-container .inner-user-login-container .sign-item p a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #318eff;
+    transition: 0.3s;
+}
+
+.user-login-container .inner-user-login-container .sign-item p a:hover{
+    text-decoration: underline;
+}
+
+#spinner-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.221);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+}
+
+#spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(255, 255, 255, 0.733);
+    border-top: 4px solid #3c39ffeb;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    /* Use the 'spin' animation */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3c39ffbb;
+}
+
+@media screen and (max-width:450px) {
+    .user-login-container .inner-user-login-container .sign-item{
+        width: 20rem;
+    }
+    .user-login-container .inner-user-login-container{
+        padding: 20px;
+    }
+}

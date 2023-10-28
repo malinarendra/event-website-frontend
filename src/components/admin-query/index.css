@@ -1,0 +1,60 @@
+.query-container{
+    margin-top: 7rem;
+    padding: 0px 50px;
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+}
+
+table thead{
+   background-color: #6F7BDB;
+   color: white;
+}
+
+table,th,td{
+    /* border: 1px solid rgba(0, 0, 0, 0.393); */
+    border-collapse: collapse;
+}
+
+th,td{
+    text-align: left;
+    padding: 15px;
+}
+
+table td a:hover{
+    text-decoration: underline;
+}
+
+table .delete{
+    font-size: 25px;
+    color: rgba(255, 0, 0, 0.703);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+table .delete:hover{
+    transform: scale(1.2);
+    color: red;
+}
+
+
+table td.action{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+table tr:nth-child(even){
+    background-color: #6f7bdb14;
+}
+
+table tr{
+    cursor: pointer;
+}
+
+.no-query{
+    text-align: center;
+    color: red;
+}

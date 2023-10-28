@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.event-container .inner-event-container {
+    margin-top: 4rem;
+}
+
+.event-container .add-event {
+    width: 55rem;
+    position: sticky;
+    top: 7rem;
+    z-index: 100;
+    margin-top: 7rem;
+}
+
+.event-container .add-event a {
+    float: right;
+    text-decoration: none;
+}
+
+.event-container .add-event a span {
+    padding: 10px;
+    font-size: 30px;
+    background-color: #2053fc;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.event-container .add-event a span:hover {
+    transform: scale(1.15);
+}
+
+/* no event image container */
+.event-container .inner-event-container .no-events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.event-container .inner-event-container .no-events img {
+    width: 500px;
+    height: 350px;
+}
+
+.event-container .inner-event-container .no-events h2{
+    text-align: center !important;
+}
+
+
+.event-container .event {
+    width: 55rem;
+    min-height: 8rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    border: 1px solid #00000021;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.event-container .event a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.event-container .event:hover {
+    background-color: #dce9ff30;
+    transform: scale(1.05);
+}
+
+.event-container .event .down-space {
+    margin-bottom: 10px;
+}
+
+.event-container .event .upper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-container .event .upper h2 {
+    font-size: 25px;
+}
+
+.event-container .event .upper p {
+    font-size: 18px;
+}
+
+.event-container .event .middle p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.event-container .event .lower {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.event-container .event .lower span {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.event-container .event .lower .delete {
+    transition: 0.3s;
+    color: #ff00009c;
+}
+
+.event-container .event .lower .delete:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+.event-container .event .lower .edit {
+    margin-left: 15px;
+    transition: 0.3s;
+    color: #0000ffa3;
+}
+
+.event-container .event .lower .edit:hover {
+    color: blue;
+    transform: scale(1.2);
+}
+
+
+/* css spinner */
+#spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    border-top: 4px solid #3c39ffeb;
+    border-radius: 50%;
+    margin-top: 5rem;
+    animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:1035px) {
+    .event-container .event {
+        width: 45rem;
+    }
+
+    .event-container .add-event {
+        width: 45rem;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .event-container .event {
+        width: 35rem;
+    }
+
+    .event-container .add-event {
+        width: 35rem;
+    }
+
+    .event-container .add-event a span {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .event-container .event {
+        width: 20rem;
+    }
+
+    .event-container .event .upper {
+        display: block;
+    }
+
+    .event-container .event .upper h2{
+        margin-bottom: 10px;
+    }
+
+    .event-container .add-event {
+        width: 20rem;
+    }
+
+    .event-container .event:hover {
+        transform: scale(1.05);
+    }
+
+    .event-container .inner-event-container .no-events img {
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .event-container .event {
+        width: 18rem;
+    }
+
+    .event-container .add-event {
+        width: 18rem;
+    }
+
+    .event-container .event .upper p {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,266 @@
+body{
+    background-color: #e6e6f3;
+}
+.contact-combinator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5rem;
+    margin-top: 7rem;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* left */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.contact-combinator .contact-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.contact-combinator .contact-left h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.contact-combinator .contact-left p {
+    max-width: 500px;
+    min-width: 200px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.contact-combinator .contact-left .vertical-space {
+    margin-bottom: 3rem;
+}
+
+.contact-combinator .contact-left .vertical-space span::after {
+    content: "";
+    background-color: #312ef0;
+    width: 35%;
+    height: 8px;
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* right */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.contact-combinator .contact-right form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-combinator .contact-right form .error {
+    color: red;
+    margin-top: 5px;
+}
+
+.contact-combinator .contact-right form .item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.contact-combinator .contact-right form .item label {
+    margin-bottom: 10px;
+}
+
+.contact-combinator .contact-right form .flex-name {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.contact-combinator .contact-right form .flex-name .inner-flex-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-combinator .contact-right form .flex-name .flex-name-margin {
+    margin-right: 2rem;
+}
+
+.contact-combinator .contact-right form .item input {
+    padding: 8px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.575);
+    font-size: 18px;
+    border-radius: 5px;
+    color: #000000bf;
+}
+
+.contact-combinator .contact-right form .item input:focus-visible {
+    outline: 2px solid #3c39ffeb;
+}
+
+.contact-combinator .contact-right form .item input[type="number"]::-webkit-inner-spin-button,
+.contact-combinator .contact-right form .item input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.contact-combinator .contact-right form .item textarea:focus-visible {
+    outline: 2px solid #3c39ffeb;
+    border: none;
+}
+
+.contact-combinator .contact-right form .item textarea {
+    padding: 8px 10px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.575);
+    font-size: 18px;
+    border-radius: 5px;
+    resize: none;
+    color: #000000bf;
+}
+
+.contact-combinator .contact-right form .item button {
+    font-size: 20px;
+    padding: 10px 0px;
+    background-color: #3c39ffeb;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.contact-combinator .contact-right form .item button:hover {
+    background-color: #312ef0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3c39ffbb;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* media query */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* media query 1030px */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+@media screen and (max-width:1040px) {
+
+    /* combinator */
+    .contact-combinator {
+        padding: 0px 1rem;
+    }
+
+    /* left */
+    .contact-combinator .contact-left h1 {
+        font-size: 35px;
+    }
+
+    .contact-combinator .contact-left .vertical-space span::after {
+        width: 8rem;
+    }
+
+    .contact-combinator .contact-left p {
+        max-width: 400px;
+        font-size: 17px;
+    }
+
+    /* right */
+    .contact-combinator .contact-right form .flex-name .flex-name-margin {
+        margin-right: 20px;
+    }
+
+    .contact-combinator .contact-right form .item label {
+        margin-bottom: 7px;
+    }
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* media query 1030px */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+@media screen and (max-width:900px) {
+
+    /* combinator */
+    .contact-combinator {
+        padding: 3rem 3rem;
+        display: block;
+    }
+
+    /* left */
+    .contact-combinator .contact-left h1 {
+        font-size: 3rem;
+    }
+
+    .contact-combinator .contact-left p {
+        max-width: 500px;
+        font-size: 18px;
+    }
+
+    /* right */
+    .contact-combinator .contact-right form .flex-name .flex-name-margin {
+        margin-right: 20px;
+    }
+
+    .contact-combinator .contact-right form .item label {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* media query 1030px */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+@media screen and (max-width:600px) {
+
+    /* combinator */
+    .contact-combinator {
+        padding: 2rem 2rem;
+        display: block;
+    }
+
+    /* left */
+    .contact-combinator .contact-left h1 {
+        font-size: 35px;
+    }
+
+    .contact-combinator .contact-left .vertical-space {
+        margin-bottom: 30px;
+    }
+
+    .contact-combinator .contact-left p {
+        max-width: 500px;
+        font-size: 18px;
+    }
+
+    /* right */
+    .contact-combinator .contact-right form .item label {
+        margin-bottom: 10px;
+    }
+
+    .contact-combinator .contact-right form .flex-name {
+        display: block;
+    }
+
+    .contact-combinator .contact-right form .flex-name .flex-name-margin {
+        margin-right: 0px;
+    }
+
+    .contact-combinator .contact-right form .flex-name .inner-flex-name {
+        margin-bottom: 1rem;
+    }
+
+}

@@ -1,0 +1,96 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-color: #f9f9f9be;
+    font-family: Helvetica;
+}
+
+.user-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user-login-container h2 {
+    color: #111;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.user-login-container .inner-user-login-container{
+    padding: 2rem;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 8px;
+}
+
+.user-login-container .inner-user-login-container .item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.user-login-container .inner-user-login-container .signup{
+    margin-bottom: 0px;
+}
+
+.user-login-container .inner-user-login-container .item label{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.user-login-container .inner-user-login-container .item input{
+    padding: 10px 10px;
+    border: 2px solid rgba(163, 161, 161, 0.523);
+    border-radius: 3px;
+    background-color: rgba(163, 161, 161, 0.057);
+    font-size: 18px;
+}
+
+.user-login-container .inner-user-login-container .item input:focus-visible{
+    outline: 2px solid #007aff;
+    border: none;
+}
+
+.user-login-container .inner-user-login-container .item button{
+    padding: 10px 0px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    background-color: #007aff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.user-login-container .inner-user-login-container .item button:hover{
+    background-color: #006fe5;
+}
+
+.user-login-container .inner-user-login-container .item p{
+    font-size: 20px;
+}
+
+.user-login-container .inner-user-login-container .item p a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #318eff;
+    transition: 0.3s;
+}
+
+.user-login-container .inner-user-login-container .item p a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:450px) {
+    .user-login-container .inner-user-login-container{
+        padding: 20px;
+    }
+}
